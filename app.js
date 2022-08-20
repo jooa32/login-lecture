@@ -9,6 +9,4 @@ app.set("view engine", "ejs");
 const home = require("./routes/home");
 app.use("/", home);
 
-app.listen(PORT, function(){
-    console.log("서버가동");
-}); 
+module.exports = app;
